@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "esnext", // version d'ECMAScript cible
+      "module": "commonjs", // système de modules à utiliser
+      "strict": true, // activer toutes les options strictes de TypeScript
+      "pretty": true,
+      "esModuleInterop": true, // autoriser l'import de modules CommonJS dans des modules ES2015
+      "outDir": "./dist", // dossier de destination pour les fichiers transpilés
+      "baseUrl": "./src", // racine des chemins d'import
+      "sourceMap": true, // générer des fichiers sourceMap pour faciliter le débogage
+      "experimentalDecorators": true, // autoriser les décorateurs expérimentaux
+      "emitDecoratorMetadata": true, // activer la génération de métadonnées de décorateur pour les classes
+      "forceConsistentCasingInFileNames": true, // éviter les erreurs de chemin d'import
+      "resolveJsonModule": true, // autoriser l'import de fichiers JSON
+      "noUnusedLocals": true, // signaler les variables locales inutilisées
+      "noUnusedParameters": true, // signaler les paramètres inutilisés
+      "noImplicitReturns": true, // signaler les fonctions qui ne retournent pas explicitement une valeur
+      "noFallthroughCasesInSwitch": true // signaler les cas de switch sans break ni return
+    },
+    "moduleResolution": "Node",
+    "include": ["src/**/*"], // inclure tous les fichiers dans le dossier src et ses sous-dossiers
+    "exclude": ["node_modules"] // exclure les dossiers node_modules
+  }
+  
+  
